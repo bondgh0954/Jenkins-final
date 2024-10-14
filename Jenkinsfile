@@ -68,9 +68,9 @@ pipeline {
                         sh 'git commit -m "commiting changes'
                         sh 'git push origin HEAD:main'
                     }
-                    
-     
-
+                }    
+            }
+        }
 
 
     }
