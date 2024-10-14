@@ -72,7 +72,7 @@ pipeline {
 
                         sh 'git add .'
                         sh 'git commit -m "commiting version increment changes"'
-                        sh 'git  push oring HEAD:main'
+                        sh 'git  push origin HEAD:main'
                     }
                 }
             }
