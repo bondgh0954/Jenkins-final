@@ -62,7 +62,7 @@ pipeline {
             steps{
                 script{
                     echo 'commiting changes into git registry.....'
-                    withCredentials([usernamePassword(credentialsId: 'github-credentials', usernameVariable: 'USER', passwordVariable: 'PASS')]){
+                    withCredentials([usernamePassword(credentialsId:'github-credentials', usernameVariable: 'USER', passwordVariable: 'PASS')]){
 
                         sh 'git config --global user.email "jenkins@example.com"'
                         sh 'git config --global user.name "jenkins"'
