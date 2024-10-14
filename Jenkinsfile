@@ -68,7 +68,7 @@ pipeline {
                         sh 'git config --global user.name "jenkins"'
                         sh "git remote set-url origin https://${USER}:${PASS}@github.com:bondgh0954/Jenkins-final.git"
                         sh 'git add .'
-                        sh 'git commit -m "commiting changes'
+                        sh 'git commit -m "commiting changes"'
                         sh 'git push origin HEAD:main'
                     }
                 }    
