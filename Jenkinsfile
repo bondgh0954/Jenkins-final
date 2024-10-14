@@ -44,7 +44,7 @@ pipeline {
                     echo 'pushing docker image into private registry......'
                     withCredentials([usernamePassword(credentialsId: 'dockerhub-credentials', usernameVariable: 'USER', passwordVariable: 'PASS')]){
                         sh "echo $PASS | docker login -u $USER --password-stdin"
-                        sh "docker push $IMAGE_NAME"
+                        sh "docker push nanaot/java-app:$IMAGE_NAME"
                     }
                 }
             }
