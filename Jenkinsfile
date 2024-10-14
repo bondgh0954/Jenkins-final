@@ -64,7 +64,7 @@ pipeline {
                     echo 'commiting changes into git registry.....'
                     withCredentials([usernamePassword(credentialsId:'github-credentials', usernameVariable: 'USER', passwordVariable: 'PASS')]){
 
-                        sh "git remot set-url origin https://${USER}:${PASS}@github.com/bondgh0954/Jenkins-final.git"
+                        sh "git remote set-url origin https://${USER}:${PASS}@github.com/bondgh0954/Jenkins-final.git"
 
                         sh 'git status'
                         sh 'git config --global user.name "jenkins"'
