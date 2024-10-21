@@ -25,13 +25,13 @@ Create and configure a server on digialOcean <br/>
 Set firewall configuration to open port 8080 for jenkins container and install docker on the server <br/>
 run jenkins docker image container on the server <br/>
                 
-                docker run -p 8080:8080 -p 50000:50000 -d jenkins_home:/var/jenkins_home jenkins/jenkins:lts
+         docker run -p 8080:8080 -p 50000:50000 -d jenkins_home:/var/jenkins_home jenkins/jenkins:lts
 
-ssh into the jenkins container <br/>
+Ssh into the jenkins container <br/>
 
-           docker exec -u o -it containerID bash
+         docker exec -u o -it containerID bash
            
-obtain the admin password jenkins intial configuration
+Obtain the admin password jenkins intial configuration
 
         cat /var/jenkins_home/secrets/initialAdminPassword
        
