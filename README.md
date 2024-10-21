@@ -1,7 +1,7 @@
 # Jenkins-final
 # Project Description
 
-  Configure webserver on digitalOcean and run jenkins on it
+  ## Configure webserver on digitalOcean and run jenkins on it
   Create multibranch pipeline
   pipeline 
       dynamically increment application version
