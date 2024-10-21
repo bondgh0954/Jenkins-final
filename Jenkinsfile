@@ -54,6 +54,12 @@ pipeline {
             steps{
                 script{
                     echo 'deploying application'
+                    def docker = "docker run -p 8080:8080 nanaot/java-app:${IMAGE_NAME}"
+                    sshagent(['key-pair']) {
+
+                        sh "ssh -o StrickHostKeyChecking=no ec2-user@3.66.189.60 ${docker}"
+
+                     }
                 }
             }
         }
