@@ -19,4 +19,11 @@
   AWS EC2
   Digital Ocean
   git
+# Detailed project Description
+## Step 1
+  Create and configure a server on digialOcean
+  Set firewall configuration to open port 8080 for jenkins container and install docker on the server
+  run jenkins docker image container on the server
+       docker run -p 8080:8080 -p 50000:50000 -d jenkins_home:/var/jenkins_home jenkins/jenkins:lts
+       
 
