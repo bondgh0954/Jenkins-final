@@ -57,7 +57,7 @@ pipeline {
                     def dockerCmd = "docker run -p 8080:8080 -d nanaot/java-app:${IMAGE_NAME}"
                     sshagent(['key-pair']) {
 
-                        sh "ssh -o StrickHostKeyChecking=accept-new ec2-user@3.66.189.60 ${dockerCmd}"
+                        sh "ssh -o StrickHostKeyChecking=yes ec2-user@3.66.189.60 ${dockerCmd}"
 
                     }
                 }
