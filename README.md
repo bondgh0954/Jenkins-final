@@ -26,9 +26,13 @@ Set firewall configuration to open port 8080 for jenkins container and install d
 run jenkins docker image container on the server <br/>
                 
                 docker run -p 8080:8080 -p 50000:50000 -d jenkins_home:/var/jenkins_home jenkins/jenkins:lts
+
 ssh into the jenkins container <br/>
+
            docker exec -u o -it containerID bash
+           
 obtain the admin password jenkins intial configuration
+
         cat /var/jenkins_home/secrets/initialAdminPassword
        
 
